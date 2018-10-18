@@ -1,0 +1,26 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1180px;
+}
+
+.header {}
+
+.header__logo {}
+
+.logo {}
+
+.header__menu {}
+
+.menu {}
+
+.menu__item {}
+
+.menu__item_active {}
+
+a.menu__item-link {}
