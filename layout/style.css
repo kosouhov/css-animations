@@ -110,7 +110,7 @@ h2.content-title__h2 {
 
 .content__content-picture {
 	position: relative;
-	left: 200px;
+	margin-left: 200px;
 	top: -100px;
 }
 
@@ -264,13 +264,126 @@ h2.content-title__h2 {
 
 	.ready .server__body {
 		transform: translateY(0);
-		transition-delay: 2400ms;
+		transition-delay: 2200ms;
 	}
 
 	.ready .server__shadow_0 {
 		transform: translateY(0);
-		transition-delay: 2600ms;
+		transition-delay: 2400ms;
 	}
+
+.content__lines {
+	position: relative;
+}
+
+.lines {
+	position: absolute;
+	top: 280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.lines__line {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.lines__line_0 {
+	width: calc(100% - 40px);
+}
+
+.lines__line_1 {
+	width: calc(100% - 120px);
+}
+
+.lines__line_2 {
+	width: calc(100% - 80px);
+}
+
+.lines__line_3 {
+	width: calc(100% - 0px);
+}
+
+.lines__line_4 {
+	width: calc(100% - 40px);
+}
+
+.line {
+	display: flex;
+	align-items: center;
+}
+
+.line__round {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border: 2px solid rgba(255,255,255,.5);
+	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 500ms linear;
+}
+
+.line__bridge {
+	width: 100%;
+	height: 2px;
+	background-color: rgba(255,255,255,.5);
+	transition: transform 3000ms linear;
+	transform: scaleX(0);
+}
+
+.ready .lines__line_0 .line__bridge {
+	transition-delay: 1200ms;
+	transform: scaleX(1);
+}
+
+.ready .lines__line_1 .line__bridge {
+	transition-delay: 1600ms;
+	transform: scaleX(1);
+}
+
+.ready .lines__line_2 .line__bridge {
+	transition-delay: 1400ms;
+	transform: scaleX(1);
+}
+
+.ready .lines__line_3 .line__bridge {
+	transition-delay: 1000ms;
+	transform: scaleX(1);
+}
+
+.ready .lines__line_4 .line__bridge {
+	transition-delay: 1800ms;
+	transform: scaleX(1);
+}
+
+
+
+.ready .lines__line_0 .line__round {
+	transition-delay: 4200ms;
+	opacity: 1;
+}
+
+.ready .lines__line_1 .line__round {
+	transition-delay: 4600ms;
+	opacity: 1;
+}
+
+.ready .lines__line_2 .line__round {
+	transition-delay: 4400ms;
+	opacity: 1;
+}
+
+.ready .lines__line_3 .line__round {
+	transition-delay: 4000ms;
+	opacity: 1;
+}
+
+.ready .lines__line_4 .line__round {
+	transition-delay: 4800ms;
+	opacity: 1;
+}
 
 
 
