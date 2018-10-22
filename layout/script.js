@@ -4,4 +4,5 @@ window.onload = () => {
 		let e = images[i]
 		e.style.width = e.width / 2 + 'px'
 	}
+	document.body.classList.add('ready');
 }
